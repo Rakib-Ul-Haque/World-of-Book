@@ -1,0 +1,12 @@
+CREATE TABLE users (
+    id INT NOT NULL AUTO_INCREMENT UNIQUE ,
+    catagory VARCHAR(255) NOT NULL,
+    bookname VARCHAR(255) NOT NULL UNIQUE,
+    writtername VARCHAR(255) NOT NULL,
+    publishar_date VARCHAR(255) NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id,bookname)
+);
+
+INSERT INTO Customer (catagory,bookname,writtername,publishar_date)
+VALUES ('Science Fiction','The Handmaid Tale','Margaret Atwood','1985')
